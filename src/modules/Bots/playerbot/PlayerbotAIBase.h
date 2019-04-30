@@ -1,4 +1,6 @@
 #pragma once
+#include "Common.h"
+#include "SharedDefines.h"
 
 class Player;
 class PlayerbotMgr;

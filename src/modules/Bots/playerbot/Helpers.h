@@ -1,7 +1,10 @@
 #pragma once
+#include "SharedDefines.h"
+#include "Common.h"
+#include <unordered_map>
 
 template<typename T>
-map<int, T> filterList(vector<T> src, string filter)
+map<int, T> filterList(vector<T> src, string filter);
 {
     map<int, T> result;
     if (filter.empty() || filter == "*")

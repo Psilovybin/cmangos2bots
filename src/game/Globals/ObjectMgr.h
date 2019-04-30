@@ -33,7 +33,7 @@
 #include "Maps/MapPersistentStateMgr.h"
 #include "Globals/ObjectAccessor.h"
 #include "Entities/ObjectGuid.h"
-
+#include "SharedDefines.h"
 //#include <Map.h>
 //#include <climi>
 
@@ -96,7 +96,7 @@ struct AreaTrigger
 
     bool IsLessOrEqualThan(AreaTrigger const* l) const      // Expected to have same map
     {
-        MANGOS_ASSERT(target_mapId == l->target_mapId);
+        MANGOS_ASSERT(target_mapId == l->target_mapId)
         return requiredLevel <= l->requiredLevel && requiredItem <= l->requiredItem && requiredItem2 <= l->requiredItem2
                && heroicKey <= l->heroicKey && heroicKey2 <= l->heroicKey2 && requiredQuest <= l->requiredQuest && requiredQuestHeroic <= l->requiredQuestHeroic;
     }
